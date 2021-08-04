@@ -2,8 +2,7 @@ export const columns = [
   {
     title: "Player",
     dataIndex: "player",
-    sorter: (a, b) => a.player.length - b.player.length,
-    sortDirections: ["ascend", "descend"],
+    sorter: (a, b) => a.player.localeCompare(b.player),
   },
   {
     title: "Age",
